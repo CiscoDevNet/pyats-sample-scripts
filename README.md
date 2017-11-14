@@ -25,6 +25,20 @@ $ pip install pyats
 $ git clone https://github.com/CiscoDevNet/pyats-sample-scripts.git
 ```
 
+## Sample Script Usage
 
+There are two ways to run a typical pyATS script:
 
+    1. through `easypy`, which generates log and archives
+    2. as standalone, and prints results to screen
+
+```bash
+$ cd pyats-sample-scripts/basic
+
+$ easypy job/basic_example_job.py
+
+$ python basic_example_script.py
+```
+
+Refer to each job file's docstring on details of command-line arguments.
 
