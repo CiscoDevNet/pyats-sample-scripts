@@ -29,8 +29,8 @@ $ git clone https://github.com/CiscoDevNet/pyats-sample-scripts.git
 
 There are two ways to run a typical pyATS script:
 
-    1. through `easypy`, which generates log and archives
-    2. as standalone, and prints results to screen
+1. through `easypy`, which generates log and archives
+2. as standalone, and prints results to screen
 
 ```bash
 $ cd pyats-sample-scripts/basic
