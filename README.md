@@ -7,6 +7,7 @@ packages of pyATS.
 ## General Information
 
 - Website: https://developer.cisco.com/site/pyats/
+- Bug Tracker: https://github.com/CiscoTestAutomation/pyats/issues
 - Documentation: https://developer.cisco.com/site/pyats/docs/
 
 ## Requirements
