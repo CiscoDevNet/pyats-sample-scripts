@@ -33,10 +33,10 @@ import os
 import logging
 import argparse
 
-from ats.easypy import run
+from pyats.easypy import run
 
 # import logic statements from datastructures module
-from ats.datastructures.logic import And, Or, Not
+from pyats.datastructures.logic import And, Or, Not
 
 #*******************************************************************************
 #* ENVIRONMENT
