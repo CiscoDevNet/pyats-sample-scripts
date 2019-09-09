@@ -80,8 +80,8 @@ __date__= 'Nov 14, 2017'
 import logging
 import argparse
 
-from ats import aetest
-from ats.log.utils import banner
+from pyats import aetest
+from pyats.log.utils import banner
 
 # import local library
 from libs import local_library
@@ -218,7 +218,7 @@ class CommonSetup(aetest.CommonSetup):
     #*
     #*  defining the most simplistic subsections.
     #*
-    #*  subsection sare defined by applying the @aetest.subsection decorator
+    #*  subsections are defined by applying the @aetest.subsection decorator
     #*  to a method. This marks it as a subsection. The function name is used
     #*  as the subsection uid/name.
     @aetest.subsection
@@ -270,7 +270,7 @@ class CommonSetup(aetest.CommonSetup):
         # let's provide a result and a msg
         self.passed('my example subsection is so awesome it always passes!')
 
-        # the following code is simply never excuted
+        # the following code is simply never executed
         logger.info('I am never executed :-(')
 
     #******************************

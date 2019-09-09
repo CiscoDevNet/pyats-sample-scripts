@@ -48,8 +48,8 @@ __date__= 'Nov 14, 2017'
 import logging
 import argparse
 
-from ats import aetest
-from ats.log.utils import banner
+from pyats import aetest
+from pyats.log.utils import banner
 
 #**********************************
 #* Import From Base Script
@@ -120,7 +120,7 @@ parameters.update(variant_parameter_A = 'variant A',
 class CommonSetup(base_example.CommonSetup):
     '''Common Setup Section
 
-    This CommonSetup inherites from the base_example.CommonSetup, and adds more
+    This CommonSetup inherits from the base_example.CommonSetup, and adds more
     local subsections to it.
 
     '''

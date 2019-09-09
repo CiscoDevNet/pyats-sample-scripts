@@ -10,7 +10,7 @@ For more on testcase files, refer to __init__.py of testcases/ folder.
 #
 # import statements
 #
-from ats import aetest
+from pyats import aetest
 import logging
 
 #

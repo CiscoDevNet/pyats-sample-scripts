@@ -4,7 +4,7 @@ Basic Example Script
 
 A very simple test script example which include:
     common_setup
-    tescases
+    testcases
     common_cleanup
 
 The purpose of this sample test script is to demonstrate
@@ -16,7 +16,7 @@ You can run this script directly as:
 
 import logging
 
-from ats import aetest
+from pyats import aetest
 
 # get your logger for your script
 log = logging.getLogger(__name__)
@@ -29,7 +29,7 @@ class common_setup(aetest.CommonSetup):
     and serves to perform all the "common" setups required for your script.
 
     Define a common setup section by subclassing aetest.CommonSetup class. 
-    It's a good conventiont to name it 'common_setup', as this section's
+    It's a good convention to name it 'common_setup', as this section's
     reporting ID is always 'common_setup'.
 
     Each common setup may have 1+ subsections. Consider a subsection as a 
@@ -138,7 +138,7 @@ class common_cleanup(aetest.CommonCleanup):
     cleanup the lingering mess left behind in the testbed/devices under test.
 
     Define a common cleanup section by subclassing aetest.CommonCleanup class. 
-    It's a good conventiont to name it 'common_cleanup', as this section's
+    It's a good convention to name it 'common_cleanup', as this section's
     reporting ID is always 'common_cleanup'.
 
     Similar to its counterpart, common cleanup may have 1+ subsections. 

@@ -19,14 +19,14 @@ import logging
 logger = logging.getLogger(__name__)
 
 #**********************************
-#* Function & Class Defitions
+#* Function & Class Definitions
 #*
 def function_supporting_step(step):
     '''function_supporting_step
 
     This function demonstrate the use of steps within function APIs. This
     enables smaller breakdown of functions into smaller steps, and thus provides
-    finer granuality in your testscript logs.
+    finer granularity in your testscript logs.
 
     Arguments
     ---------
