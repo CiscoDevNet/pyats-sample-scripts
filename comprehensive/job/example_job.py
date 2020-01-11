@@ -10,8 +10,8 @@ Examples:
     # to run under standalone execution
     bash$ python base_example.py
 
-    # to run under easypy
-    bash$ easypy job/example_job.py
+    # to run under pyats job engine
+    bash$ pyats run job example_job.py
 
 References:
    For the complete and up-to-date user guide on pyATS, visit:
@@ -101,11 +101,11 @@ parser.add_argument('--argument_b',
 #*******************************************************************************
 #* TESTBED INFORMATION
 #*
-#*  when executing a jobfile using easypy, testbed file should be provided to 
-#*  easypy launcher using argument -testbed_file. Easypy will automatically 
+#*  when executing a jobfile using pyats, testbed file should be provided to 
+#*  pyats job launcher using argument --testbed-file. The engine will then 
 #*  load this provided testbed file into topology objects, and pass it to each
 #*  testscript as script argument "testbed". 
-#*       easypy myjobfile.py -testbed_file mytestbed.yaml
+#*       pyats run job myjobfile.py --testbed-file mytestbed.yaml
 #*
 #*  as long as the argument is used properly, there's nothing extra the user 
 #*  has to do. Testscripts will automatically be passed the parameter 'testbed',
@@ -189,11 +189,11 @@ labels2 = {
 #* MAIN FUNCTION
 #*
 #*  Each job file must have a main() function where testscripts/task runs are
-#*  defined. After a job file is imported, easypy will lookup main() function
+#*  defined. After a job file is imported, pyats will lookup main() function
 #*  to run. 
 #*
 #*  main() funtion shall have a single argument called 'runtime'. This allows
-#*  the engine to automatically pass in the current Easypy runtime object. The
+#*  the engine to automatically pass in the current runtime object. The
 #*  following should be performed within the main() function:
 #*      - parse any custom command-line arguments
 #*      - configure logger log-levels, if any

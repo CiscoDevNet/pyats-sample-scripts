@@ -37,8 +37,8 @@ Examples:
     # to run with datafile under command-line
     bash$ python base_example.py -datafile=data/base_datafile.yaml
 
-    # to run under easypy
-    bash$ easypy job/example_job.py
+    # to run under pyats job engine
+    bash$ pyats run job job/example_job.py
 
 References:
    For the complete and up-to-date user guide on pyATS, visit:
@@ -89,8 +89,8 @@ from libs import local_library
 #*******************************************************************************
 #* LOGGING
 #*
-#*   Logging should be done by using the standard Python logging module. AEtest
-#*   and Easypy will take care of configuring the log outputs to be Cisco Logs
+#*   Logging should be done by using the standard Python logging module. The
+#*   engine will take care of configuring the log outputs to be Cisco Logs
 #*   format. There's not much more to say beyond that. :-)
 #*   
 #* Convention:
@@ -380,7 +380,7 @@ class CommonSetup(aetest.CommonSetup):
     #******************************
     #* Access Testbed Information
     #* 
-    #*  when easypy is called with -testbed_file argument, the 'testbed' 
+    #*  when pyats run job is called with --testbed-file argument, the 'testbed' 
     #*  parameter is automatically provided to the testscript with the 
     #*  corresponding topology objects. 
     #*  in standalone execution, users need to create their own testbed

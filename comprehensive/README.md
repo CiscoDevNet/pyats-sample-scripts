@@ -20,8 +20,9 @@ walking users through important features and explaining them using live
 examples, supplementing the full user guide at:
     https://developer.cisco.com/site/pyats/docs/
 
-This example is executable both under standalone execution, and through `easypy`.
-You can modify parts of this code to see how it changes execution behaviors.
+This example is executable both under standalone execution, and through 
+pyATS command line `pyats run job`. You can modify parts of this code to see 
+how it changes execution behaviors.
 
 ```
     Folder Structure
@@ -55,7 +56,7 @@ $ cd pyats-sample-scripts/comprehensive/
 $ python base_example.py --testbed etc/example_testbed.yaml
 $ python variant_example.py --testbed etc/example_testbed.yaml
 
-# easypy execution
-# ----------------
-$ easypy job/example_job.py -testbed_file etc/example_testbed.yaml
+# pyats job execution
+# -------------------
+$ pyats run job job/example_job.py --testbed-file etc/example_testbed.yaml
 ```

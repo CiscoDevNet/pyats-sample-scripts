@@ -25,8 +25,8 @@ Examples:
     # to run under standalone execution
     bash$ python variant_example.py
 
-    # to run under easypy
-    bash$ easypy job/example_job.py
+    # to run under pyats job engine
+    bash$ pyats run job job/example_job.py
 
 References:
    For the complete and up-to-date user guide on pyATS, visit:

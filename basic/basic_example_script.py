@@ -107,13 +107,18 @@ class Testcase_One(aetest.Testcase):
     @aetest.test
     def test_2(self, section):
         '''
-        same content as last testcase - notice the section id difference.
+        you can also provide explicit results, reason and data using result API.
+        These information will be captured in the result summary.
         '''
         log.info("test section: %s in testcase %s" % (section.uid, self.uid))
 
-        # testcase instance is preserved, eg
-        assert self.b == 2
-
+        if self.b == 2:
+            self.passed('variable b contains the expected value',
+                        data = {'b': self.b})
+        else:
+            self.failed('variable b did not contains the expected value',
+                        data = {'b': self.b})
+            
     @aetest.cleanup
     def cleanup(self):
         '''cleanup section
