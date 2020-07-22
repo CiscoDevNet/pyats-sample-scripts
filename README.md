@@ -36,7 +36,7 @@ There are two ways to run a typical pyATS script:
 ```bash
 $ cd pyats-sample-scripts/basic
 
-$ pyats run job job/basic_example_job.py
+$ pyats run job basic_example_job.py
 
 $ python basic_example_script.py
 ```
